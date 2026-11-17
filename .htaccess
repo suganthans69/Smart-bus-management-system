@@ -1,0 +1,9 @@
+# Disable directory listing
+Options -Indexes
+
+# Protect private files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
